@@ -6,10 +6,15 @@ Este proyecto tiene como objetivo predecir la probabilidad de que un cliente aba
 Se construyó un pipeline completo que incluye:
 
 -Limpieza y preprocesamiento de datos
+
 -División en entrenamiento y prueba
+
 -Entrenamiento de modelos
+
 -Evaluación con métricas avanzadas
+
 -Optimización de hiperparámetros
+
 -Ajuste del threshold basado en negocio
 
 ## Dataset
@@ -17,9 +22,13 @@ Se construyó un pipeline completo que incluye:
 Dataset de clientes de telecomunicaciones que incluye:
 
 -Tipo de contrato
+
 -Tiempo de permanencia (tenure)
+
 -Cargos mensuales
+
 -Servicios contratados
+
 -Variable objetivo: Churn
 
 Se detectó que:
@@ -30,14 +39,19 @@ Los clientes que abandonan el servicio tienden a tener cargos mensuales más alt
 Se implementó un Pipeline de Scikit-Learn para integrar:
 
 -Transformaciones numéricas y categóricas
+
 -One-Hot Encoding
+
 -Escalado
+
 -Modelo de clasificación
 
 Esto garantiza:
 
 -Reproducibilidad
+
 -Prevención de data leakage
+
 -Flujo profesional de ML
 
 ## Modelo Base – Regresión Logística
@@ -47,7 +61,9 @@ Se entrenó inicialmente una Regresión Logística como modelo base.
 Resultados iniciales:
 
 -Accuracy ≈ 0.86
+
 -Recall (Churn) ≈ 0.68
+
 -F1-score (Churn) ≈ 0.72
 
 ## Comparación con Random Forest
@@ -57,6 +73,7 @@ Se probó un modelo más complejo (Random Forest).
 Resultado:
 
 -No mejoró el recall
+
 -No superó al modelo base
 
 Conclusión:
@@ -87,6 +104,7 @@ Mejor parámetro:
 Modelo optimizado + threshold 0.4:
 
 -Recall (Churn) = 0.78
+
 -Accuracy ≈ 0.86
 
 ## Curva ROC y AUC
@@ -106,8 +124,11 @@ El modelo tiene excelente capacidad de separar clientes que abandonan vs los que
 Se construyó un pipeline completo de Machine Learning para predicción de churn, aplicando buenas prácticas profesionales:
 
 -Evaluación con múltiples métricas
+
 -Optimización de hiperparámetros
+
 -Ajuste estratégico del threshold
+
 -Validación con ROC y AUC
 
 El modelo final logra excelente capacidad de discriminación (AUC 0.92) y mejora la detección de clientes en riesgo.
